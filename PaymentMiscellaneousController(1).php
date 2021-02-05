@@ -196,7 +196,7 @@ class PaymentMiscellaneousController extends Controller
                 Yii::$app->session->setFlash('success', 'Payment Successful');
                 return $this->redirect(['/site/index']);
             } else {
-                if ($StatusQueryResponse['RESPCODE']=='E397'){
+                if ($StatusQueryResponse['RESPCODE']=='O'){
                     Yii::$app->session->setFlash('success', 'Payment Successful');
                     return $this->redirect(['/site/index']);
                 }
